@@ -1,0 +1,126 @@
+---
+layout: page
+title: "About"
+subtitle: "Man Always Remember Love,Because Of Romance Only."
+description: "Thinking will not overcome fear but action will."
+header-img: "img/home-bg-xingkong.jpg"
+---
+<style>
+    p.line-space {
+        line-height: 36px;
+        letter-spacing: .6px;
+    }
+    span.pull-right {
+        margin-top: 30px;
+        position: relative;
+    }
+
+    span.pull-right span{
+        content: '';
+        position: absolute;
+        top: 50%;
+        background: #606060;
+        width: 66px;
+        height: 1.5px;
+        margin-top: -1.5px;
+        left: 0;
+        margin-left: -72px;
+    }
+</style>
+<div class="zh post-container">
+    <blockquote>
+        <p class="line-space">
+            他依然向往着长岛的雪,
+            <br>
+            依然向往着潘帕斯的风吟鸟唱
+        </p>
+    </blockquote>
+
+    <p class="line-space clearfix">
+        我承认这种生活的社会价值，我也看到了它的井然有序的幸福，但是我的血液里却有一种强烈的愿望，渴望一种更狂放不羁的旅途。这种安详宁静的快乐好象有一种叫我惊惧不安的东西。我的心渴望一种更加惊险的生活。只要在我的生活中能有变迁——变迁和无法预见的刺激，我是准备踏上怪石嶙峋的山崖，奔赴暗礁满布的海滩的。
+    <span class="pull-right"><span></span>&nbsp;毛姆</span>
+    </p>
+
+    <p class="line-space clearfix">
+        “那一天我二十一岁，在我一生的黄金时代，我有好多奢望。我想爱，想吃，还想在一瞬间变成天上半明半暗的云。后来我才知道，生活就是个缓慢受锤的过程，人一天天老下去，奢望也一天天消失，最后变得像挨了锤的牛一样。我觉得自己会永远生猛下去，什么也锤不了我。”
+    <span class="pull-right"><span></span>&nbsp;王小波</span>
+    </p>
+
+    <p class="line-space clearfix">
+        因为我很了解我自己，我不能对你承诺什么。
+    <span class="pull-right"><span></span>《旺角卡门》</span>
+    </p>
+
+    <p class="line-space clearfix">
+        你不要说两次，说两次我就相信了。
+    <span class="pull-right"><span></span>《旺角卡门》</span>
+    </p>
+
+    <p class="line-space clearfix">
+        其实了解一个人并不代表什么，人是会变的，今天他喜欢凤梨，明天他可以喜欢别的。
+    <span class="pull-right"><span></span>《重庆森林》</span>
+    </p>
+
+    <p class="line-space clearfix">
+        不知道从什么时候开始，在什么东西上面都有个日期，秋刀鱼会过期，肉罐头会过期，连保鲜纸都会过期，我开始怀疑，在这个世界上，还有什么东西是不会过期的？
+    <span class="pull-right"><span></span>《重庆森林》</span>
+    </p>
+
+    <p class="line-space clearfix">
+        如果记忆是一个罐头，我希望它永远不会过期。
+    <span class="pull-right"><span></span>《重庆森林》</span>
+    </p>
+
+    <p class="line-space clearfix">
+        我从来没有想到原来婚姻是这么复杂，还以为一个人做的好就行了，可是两个人在一起，单是自己做的好是不够的。
+    <span class="pull-right"><span></span>《花样年华》</span>
+    </p>
+
+    <p class="line-space clearfix">
+        我一直以为是我自己赢了，直到有一天看着镜子，才知道自己输了，在我最美好的时候，我最喜欢的人都不在我身边。
+    <span class="pull-right"><span></span>《东邪西毒》</span>
+    </p>
+
+    <p class="line-space clearfix">
+        如果你不想被人拒绝，最好的方法，就是先拒绝别人。
+    <span class="pull-right"><span></span>《东邪西毒》</span>
+    </p>
+
+    <p class="line-space clearfix">
+        给岁月以文明，而不是给文明以岁月。
+        <span class="pull-right"><span></span>《三体》</span>
+    </p>
+
+    <p class="line-space clearfix">
+        <strong>黑夜如约而至, 我们也要学会拾阶而行</strong>
+    <span class="pull-right"><span></span>&nbsp;共勉</span>
+    </p>
+
+</div>
+
+<!-- Gitalk 评论 start  -->
+{% if site.gitalk.enable %}
+<!-- Gitalk link  -->
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: '{{site.gitalk.clientID}}',
+        clientSecret: '{{site.gitalk.clientSecret}}',
+        repo: '{{site.gitalk.repo}}',
+        owner: '{{site.gitalk.owner}}',
+        admin: ['{{site.gitalk.admin}}'],
+        distractionFreeMode: {
+    {
+        site.gitalk.distractionFreeMode
+    }
+    },
+    id: 'about',
+    })
+    ;
+    gitalk.render('gitalk-container');
+</script>
+{% endif %}
+<!-- Gitalk end -->
